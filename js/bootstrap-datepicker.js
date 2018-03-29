@@ -1297,7 +1297,7 @@
 			this.fill();
 			this.setValue();
 			if (!which || which !== 'view') {
-				this._trigger('changeDate');
+				this._trigger('changeDate', date);
 			}
 			this.inputField.trigger('change');
 			if (this.o.autoclose && (!which || which === 'date')){
